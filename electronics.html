@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrónicos</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family:'Inter',sans-serif;
+            margin:0;
+            background:#fff;
+            color:#333;
+        }
+
+        .widget-container{
+            text-align:center;
+            padding:15px;
+            background:#f5f7ff;
+        }
+
+        header{
+            background:#5988FF;
+            color:white;
+            text-align:center;
+            padding:40px 20px;
+        }
+
+        ul{
+            list-style:none;
+            padding:0;
+            margin:20px auto;
+            max-width:400px;
+        }
+
+        .list__item{
+            background:#eef2ff;
+            margin:10px 0;
+            padding:15px;
+            border-radius:10px;
+            transition:0.2s;
+        }
+
+        .list__item:hover{
+            background:#dce3ff;
+        }
+
+        .item__img{
+            width:50px;
+            vertical-align:middle;
+            margin-right:10px;
+        }
+
+        a{
+            text-decoration:none;
+            color:#333;
+            font-size:18px;
+            font-weight:600;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Dependencia Tecnológica</h1>
+</header>
+
+<div class="widget-container">
+    <h2>Selecciona el tipo de dispositivo</h2>
+
+    <ul>
+        <li class="list__item">
+            <a href="{{ electronics + '/4' }}">
+                <img class="item__img" src="../static/img/tv.svg" alt="tv">
+                <span>Televisores</span>
+            </a>
+        </li>
+
+        <li class="list__item">
+            <a href="{{ electronics + '/6' }}">
+                <img class="item__img" src="../static/img/pc.svg" alt="pc">
+                <span>Computadoras</span>
+            </a>
+        </li>
+
+        <li class="list__item">
+            <a href="{{ electronics + '/3' }}">
+                <img class="item__img" src="../static/img/console.svg" alt="console">
+                <span>Consolas</span>
+            </a>
+        </li>
+
+        <!-- 🌱 NUEVA TARJETA ECOLÓGICA -->
+        <li class="list__item">
+            <a href="{{ electronics + '/1' }}">
+                <img class="item__img" src="../static/img/battery.svg" alt="battery">
+                <span>Tecnología verde para un hogar eficiente y sostenible</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
